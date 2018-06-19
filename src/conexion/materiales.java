@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class materiales {
       conexion cn = new conexion();
       
-public ResultSet prueva() {
+public ResultSet prueBa() {
         return (cn.getValores("SELECT descripcion FROM material"));
         
     }
