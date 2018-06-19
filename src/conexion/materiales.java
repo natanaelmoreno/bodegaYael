@@ -6,6 +6,7 @@
 package conexion;
 
 import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,10 +15,14 @@ import java.sql.ResultSet;
 public class materiales {
       conexion cn = new conexion();
       
-
+public ResultSet prueva() {
+        return (cn.getValores("SELECT descripcion FROM material"));
+        
+    }
       
     public ResultSet llenarMateriales() {
         return (cn.getValores("SELECT descripcion FROM material"));
+        
     }
       
     public ResultSet llenarMarcas() {
